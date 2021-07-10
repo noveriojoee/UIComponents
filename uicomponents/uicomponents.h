@@ -16,3 +16,5 @@ FOUNDATION_EXPORT const unsigned char uicomponentsVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <uicomponents/PublicHeader.h>
 
 
+#import <uicomponents/BaseViewController.h>
+#import <uicomponents/UIComponentsInstances.h>
