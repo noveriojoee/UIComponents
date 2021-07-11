@@ -16,6 +16,9 @@
 		DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB40235269A36460018138B /* UIComponentsInstances.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB40236269A36460018138B /* UIComponentsInstances.m */; };
 		DED3FFCC269A2F21009DA4D0 /* uicomponents.h in Headers */ = {isa = PBXBuildFile; fileRef = DED3FFCA269A2F21009DA4D0 /* uicomponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEDC5299269B0051006BF1CA /* SongCardTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDC5296269B0051006BF1CA /* SongCardTableViewCell.h */; };
+		DEDC529A269B0051006BF1CA /* SongCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDC5297269B0051006BF1CA /* SongCardTableViewCell.m */; };
+		DEDC529B269B0051006BF1CA /* SongCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDC5298269B0051006BF1CA /* SongCardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		DED3FFC7269A2F21009DA4D0 /* uicomponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uicomponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED3FFCA269A2F21009DA4D0 /* uicomponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uicomponents.h; sourceTree = "<group>"; };
 		DED3FFCB269A2F21009DA4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDC5296269B0051006BF1CA /* SongCardTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SongCardTableViewCell.h; path = ../../../UIComponents/uicomponents/UIViewCells/SongCardTableViewCell.h; sourceTree = "<group>"; };
+		DEDC5297269B0051006BF1CA /* SongCardTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SongCardTableViewCell.m; path = ../../../UIComponents/uicomponents/UIViewCells/SongCardTableViewCell.m; sourceTree = "<group>"; };
+		DEDC5298269B0051006BF1CA /* SongCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SongCardTableViewCell.xib; path = ../../../UIComponents/uicomponents/UIViewCells/SongCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 		DED3FFC9269A2F21009DA4D0 /* uicomponents */ = {
 			isa = PBXGroup;
 			children = (
+				DEDC5295269B0010006BF1CA /* UITextFields */,
+				DEDC5294269B0006006BF1CA /* UIViewCells */,
 				DEB40216269A352E0018138B /* Base */,
 				DEB4020F269A34CF0018138B /* Utilities */,
 				DED3FFCA269A2F21009DA4D0 /* uicomponents.h */,
@@ -113,6 +121,23 @@
 			path = uicomponents;
 			sourceTree = "<group>";
 		};
+		DEDC5294269B0006006BF1CA /* UIViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC5296269B0051006BF1CA /* SongCardTableViewCell.h */,
+				DEDC5297269B0051006BF1CA /* SongCardTableViewCell.m */,
+				DEDC5298269B0051006BF1CA /* SongCardTableViewCell.xib */,
+			);
+			path = UIViewCells;
+			sourceTree = "<group>";
+		};
+		DEDC5295269B0010006BF1CA /* UITextFields */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextFields;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -122,6 +147,7 @@
 			files = (
 				DEB40219269A35430018138B /* BaseViewController.h in Headers */,
 				DEB40212269A34E20018138B /* ColouringUtilities.h in Headers */,
+				DEDC5299269B0051006BF1CA /* SongCardTableViewCell.h in Headers */,
 				DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */,
 				DED3FFCC269A2F21009DA4D0 /* uicomponents.h in Headers */,
 			);
@@ -185,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDC529B269B0051006BF1CA /* SongCardTableViewCell.xib in Resources */,
 				DEB4020D269A341A0018138B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +250,7 @@
 			files = (
 				DEB40213269A34E20018138B /* ColouringUtilities.m in Sources */,
 				DEB4021A269A35430018138B /* BaseViewController.m in Sources */,
+				DEDC529A269B0051006BF1CA /* SongCardTableViewCell.m in Sources */,
 				DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
