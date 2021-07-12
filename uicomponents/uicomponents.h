@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char uicomponentsVersionString[];
 
 #import <uicomponents/BaseViewController.h>
 #import <uicomponents/UIComponentsInstances.h>
+#import <uicomponents/CustomTextField.h>

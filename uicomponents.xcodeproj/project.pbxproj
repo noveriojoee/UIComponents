@@ -16,8 +16,11 @@
 		DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB40235269A36460018138B /* UIComponentsInstances.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB40236269A36460018138B /* UIComponentsInstances.m */; };
 		DED3FFCC269A2F21009DA4D0 /* uicomponents.h in Headers */ = {isa = PBXBuildFile; fileRef = DED3FFCA269A2F21009DA4D0 /* uicomponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEE8BDC5269C89B0008073E7 /* CustomTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE8BDC3269C89B0008073E7 /* CustomTextField.h */; };
+		DEE8BDC5269C89B0008073E7 /* CustomTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE8BDC3269C89B0008073E7 /* CustomTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEE8BDC6269C89B0008073E7 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE8BDC4269C89B0008073E7 /* CustomTextField.m */; };
+		DEE8BDD4269C8DC3008073E7 /* UIViewCustomMusic.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE8BDD1269C8DC3008073E7 /* UIViewCustomMusic.h */; };
+		DEE8BDD5269C8DC3008073E7 /* UIViewCustomMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE8BDD2269C8DC3008073E7 /* UIViewCustomMusic.m */; };
+		DEE8BDD6269C8DC3008073E7 /* UIViewCustomMusic.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE8BDD3269C8DC3008073E7 /* UIViewCustomMusic.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		DED3FFCB269A2F21009DA4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE8BDC3269C89B0008073E7 /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomTextField.h; path = ../../../UIComponents/uicomponents/UITextFields/CustomTextField.h; sourceTree = "<group>"; };
 		DEE8BDC4269C89B0008073E7 /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomTextField.m; path = ../../../UIComponents/uicomponents/UITextFields/CustomTextField.m; sourceTree = "<group>"; };
+		DEE8BDD1269C8DC3008073E7 /* UIViewCustomMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCustomMusic.h; sourceTree = "<group>"; };
+		DEE8BDD2269C8DC3008073E7 /* UIViewCustomMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCustomMusic.m; sourceTree = "<group>"; };
+		DEE8BDD3269C8DC3008073E7 /* UIViewCustomMusic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIViewCustomMusic.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		DED3FFC9269A2F21009DA4D0 /* uicomponents */ = {
 			isa = PBXGroup;
 			children = (
+				DEE8BDD0269C8D92008073E7 /* UIMusicCommands */,
 				DEDC5295269B0010006BF1CA /* UITextFields */,
 				DEB40216269A352E0018138B /* Base */,
 				DEB4020F269A34CF0018138B /* Utilities */,
@@ -127,6 +134,16 @@
 			path = UITextFields;
 			sourceTree = "<group>";
 		};
+		DEE8BDD0269C8D92008073E7 /* UIMusicCommands */ = {
+			isa = PBXGroup;
+			children = (
+				DEE8BDD1269C8DC3008073E7 /* UIViewCustomMusic.h */,
+				DEE8BDD2269C8DC3008073E7 /* UIViewCustomMusic.m */,
+				DEE8BDD3269C8DC3008073E7 /* UIViewCustomMusic.xib */,
+			);
+			path = UIMusicCommands;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -134,6 +151,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE8BDD4269C8DC3008073E7 /* UIViewCustomMusic.h in Headers */,
 				DEB40219269A35430018138B /* BaseViewController.h in Headers */,
 				DEB40212269A34E20018138B /* ColouringUtilities.h in Headers */,
 				DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */,
@@ -201,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB4020D269A341A0018138B /* Assets.xcassets in Resources */,
+				DEE8BDD6269C8DC3008073E7 /* UIViewCustomMusic.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +258,7 @@
 				DEE8BDC6269C89B0008073E7 /* CustomTextField.m in Sources */,
 				DEB40213269A34E20018138B /* ColouringUtilities.m in Sources */,
 				DEB4021A269A35430018138B /* BaseViewController.m in Sources */,
+				DEE8BDD5269C8DC3008073E7 /* UIViewCustomMusic.m in Sources */,
 				DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
