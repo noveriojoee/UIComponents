@@ -22,11 +22,15 @@
     self.font = [UIFont fontWithName:@"Lato" size:currentFontSize];
 }
 
--(void)bind : (void(^)(NSString *value)) callback{
+-(void)bind: (void(^)(NSString *value)) callback{
     self.onFormValueChanged = callback;
     [self addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
     
-    [self addTarget:self action:@selector(textFieldDidBeginEditing:) forControlEvents:UIControlEventEditingDidBegin];
+}
+
+-(void)bindOnEndValueChange: (void(^)(NSString *value)) callback{
+    self.onEndValueChanged = callback;
+    [self addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void)registerDoneButton{
@@ -42,12 +46,18 @@
 }
 
 - (void)endEditingKeyboard:(UIPanGestureRecognizer *)recognizer{
+//    self.onFormEndChange(self.text);
     [self.superview endEditing:YES];
 }
 
 - (void)textFieldDidChanged : (UITextField*) textField{
     if (self.onFormValueChanged != nil){
         self.onFormValueChanged(self.text);
+    }
+}
+-(void)textFieldDidEndEditing:(UITextField*)textField{
+    if (self.onEndValueChanged != nil){
+        self.onEndValueChanged(self.text);
     }
 }
 
