@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ColouringUtilities.h"
+#import <uicomponents/ColouringUtilities.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

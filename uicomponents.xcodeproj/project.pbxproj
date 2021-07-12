@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37CDEB68EDE3886B8F246FDE /* Pods_uicomponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCF8D12EC99DAE2F7B19038 /* Pods_uicomponents.framework */; };
+		357D964C1816B7471580CBF1 /* libPods-uicomponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C237003B4A537A88D598133 /* libPods-uicomponents.a */; };
 		DEB4020D269A341A0018138B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB4020C269A341A0018138B /* Assets.xcassets */; };
 		DEB40212269A34E20018138B /* ColouringUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB40210269A34E20018138B /* ColouringUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEB40213269A34E20018138B /* ColouringUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB40211269A34E20018138B /* ColouringUtilities.m */; };
@@ -16,11 +16,13 @@
 		DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB40235269A36460018138B /* UIComponentsInstances.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB40236269A36460018138B /* UIComponentsInstances.m */; };
 		DED3FFCC269A2F21009DA4D0 /* uicomponents.h in Headers */ = {isa = PBXBuildFile; fileRef = DED3FFCA269A2F21009DA4D0 /* uicomponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE8BDC5269C89B0008073E7 /* CustomTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE8BDC3269C89B0008073E7 /* CustomTextField.h */; };
+		DEE8BDC6269C89B0008073E7 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE8BDC4269C89B0008073E7 /* CustomTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DCF8D12EC99DAE2F7B19038 /* Pods_uicomponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uicomponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411E8DFF61E7033627BD79C0 /* Pods-uicomponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uicomponents.debug.xcconfig"; path = "Target Support Files/Pods-uicomponents/Pods-uicomponents.debug.xcconfig"; sourceTree = "<group>"; };
+		4C237003B4A537A88D598133 /* libPods-uicomponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-uicomponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58BD10328AC46D9A9B6AC12 /* Pods-uicomponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uicomponents.release.xcconfig"; path = "Target Support Files/Pods-uicomponents/Pods-uicomponents.release.xcconfig"; sourceTree = "<group>"; };
 		DEB4020C269A341A0018138B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../UIComponents/uicomponents/Assets.xcassets; sourceTree = "<group>"; };
 		DEB40210269A34E20018138B /* ColouringUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ColouringUtilities.h; path = ../../../UIComponents/uicomponents/Utilities/ColouringUtilities.h; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		DED3FFC7269A2F21009DA4D0 /* uicomponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uicomponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED3FFCA269A2F21009DA4D0 /* uicomponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uicomponents.h; sourceTree = "<group>"; };
 		DED3FFCB269A2F21009DA4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE8BDC3269C89B0008073E7 /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomTextField.h; path = ../../../UIComponents/uicomponents/UITextFields/CustomTextField.h; sourceTree = "<group>"; };
+		DEE8BDC4269C89B0008073E7 /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomTextField.m; path = ../../../UIComponents/uicomponents/UITextFields/CustomTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37CDEB68EDE3886B8F246FDE /* Pods_uicomponents.framework in Frameworks */,
+				357D964C1816B7471580CBF1 /* libPods-uicomponents.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +53,7 @@
 		27DADF3D46838D5EC020224C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0DCF8D12EC99DAE2F7B19038 /* Pods_uicomponents.framework */,
+				4C237003B4A537A88D598133 /* libPods-uicomponents.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +121,8 @@
 		DEDC5295269B0010006BF1CA /* UITextFields */ = {
 			isa = PBXGroup;
 			children = (
+				DEE8BDC3269C89B0008073E7 /* CustomTextField.h */,
+				DEE8BDC4269C89B0008073E7 /* CustomTextField.m */,
 			);
 			path = UITextFields;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				DEB40219269A35430018138B /* BaseViewController.h in Headers */,
 				DEB40212269A34E20018138B /* ColouringUtilities.h in Headers */,
 				DEB40237269A36460018138B /* UIComponentsInstances.h in Headers */,
+				DEE8BDC5269C89B0008073E7 /* CustomTextField.h in Headers */,
 				DED3FFCC269A2F21009DA4D0 /* uicomponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE8BDC6269C89B0008073E7 /* CustomTextField.m in Sources */,
 				DEB40213269A34E20018138B /* ColouringUtilities.m in Sources */,
 				DEB4021A269A35430018138B /* BaseViewController.m in Sources */,
 				DEB40238269A36460018138B /* UIComponentsInstances.m in Sources */,
