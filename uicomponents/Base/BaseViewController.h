@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registerSingleTapActionToView:(UIView*)view recognizer : (void(^)(UIGestureRecognizer*)) callback;
 - (void)registerToolbarToTextField : (UITextField*) textField;
 - (void)displayErrorWithMessage : (NSString*)errMsg;
-- (void)displayLoading;
+- (void)displayLoadingByShimerringWithViews : (NSMutableArray<UIView*>*) views;
 - (void)closeLoading;
 @end
 

@@ -7,9 +7,11 @@
 
 #import "BaseViewController.h"
 #import "UIComponentsInstances.h"
+#import <Shimmer/FBShimmeringView.h>
 
 @interface BaseViewController()
 @property (nonatomic, copy) void (^singleTapRecognizer)(UITapGestureRecognizer*);
+@property NSMutableArray<UIView*> *shimeringViews;
 @end
 
 @implementation BaseViewController
@@ -73,13 +75,34 @@
     
 }
 
-- (void)displayLoading{
-    
+- (void)displayLoadingByShimerringWithViews : (NSMutableArray<UIView*>*) views{
+    self.shimeringViews = views;
+    for (UIView* view in views) {
+        [self loadingShimmerWithView:view];
+    }
 }
 
 - (void)closeLoading{
-    
+    for (UIView* view in self.shimeringViews) {
+        [view removeFromSuperview];
+    }
+    [self.shimeringViews removeAllObjects];
 }
 
+
+-(void)loadingShimmerWithView : (UIView*)view{
+    FBShimmeringView *shimmerView = [[FBShimmeringView alloc] initWithFrame:view.bounds];
+    
+    UIView *upperLayer = [[UIView alloc] initWithFrame:view.bounds];
+    [upperLayer setBackgroundColor:[[UIColor grayColor]colorWithAlphaComponent:0.3f]];
+    
+    shimmerView.contentView = upperLayer;
+//    shimmerView.shimmeringOpacity=0.2f;
+    
+    [view addSubview:shimmerView];
+    
+    // Start shimmering.
+    shimmerView.shimmering = YES;
+}
 
 @end
