@@ -30,7 +30,7 @@
 
 -(void)bindOnEndValueChange: (void(^)(NSString *value)) callback{
     self.onEndValueChanged = callback;
-    [self addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self addTarget:self action:@selector(textFieldDidEndEditing:) forControlEvents:UIControlEventEditingDidEnd];
 }
 
 - (void)registerDoneButton{
