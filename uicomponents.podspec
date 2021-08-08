@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.resources = "uicomponents/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   s.source_files = "uicomponents/**/*.{h,m}"
   s.ios.deployment_target = '9.0'
-  #s.static_framework = true
+  s.static_framework = false
 
   # Specified all the dependencies here
   #s.dependency 'ActionSheetPicker-3.0'
