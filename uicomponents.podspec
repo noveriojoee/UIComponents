@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   #s.dependency 'ActionSheetPicker-3.0'
   s.dependency 'Shimmer', '~> 1.0'
   s.dependency 'lottie-ios', '2.5.3'
-  s.dependency 'GoogleMobileVision/FaceDetector'
+#  s.dependency 'GoogleMobileVision/FaceDetector'
 
   s.exclude_files = "Classes/Exclude"
 end
