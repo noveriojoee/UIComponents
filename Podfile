@@ -8,5 +8,5 @@ target 'uicomponents' do
   #lottie
   pod 'lottie-ios', '2.5.3'
   pod 'Shimmer', ' 1.0'
-  pod 'GoogleMobileVision/FaceDetector'
+#  pod 'GoogleMobileVision/FaceDetector'
 end
