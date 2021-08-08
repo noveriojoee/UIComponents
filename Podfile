@@ -8,5 +8,5 @@ target 'uicomponents' do
   #lottie
   pod 'lottie-ios', '2.5.3'
   pod 'Shimmer', ' 1.0'
-  pod 'sight', :git => 'https://maybankdigitalteam.visualstudio.com/IOS_ComputerVision_sdk/_git/ios_sight'
+  pod 'GoogleMobileVision/FaceDetector'
 end
